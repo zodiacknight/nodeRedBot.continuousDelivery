@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: nodeRedBot
+  host: nodeRedBot
+  disk_quota: 1024M
+  services:
+  - nodeRedBot-cloudantNoSQLDB
+  - nodeRedBots.languageT
+  - nodeRedBots.Conversation
+  - nodeRedBots.VRecognition
